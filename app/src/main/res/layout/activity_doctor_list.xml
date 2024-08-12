@@ -4,13 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Activities.Doctor_List_Activity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/doctor" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctorlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
