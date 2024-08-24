@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
 <!--    <font-->
 <!--        android:fontStyle="normal"-->
 <!--        android:fontWeight="400"-->
@@ -9,4 +10,12 @@
 <!--        android:fontStyle="italic"-->
 <!--        android:fontWeight="400"-->
 <!--        android:font="@font/lobster_italic" />-->
+=======
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400" />
+>>>>>>> e51ef12abfb741808c28a251e0ba38f1c002dc42
 </font-family>

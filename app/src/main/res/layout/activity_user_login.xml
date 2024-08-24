@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WelCome to "
+        android:text="Welcome to"
         android:textSize="33sp"
         android:textStyle="bold" />
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="DoctorG"
         android:textSize="40sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="300dp"
@@ -98,9 +98,17 @@
                 android:layout_height="wrap_content"
                 android:onClick="register_Activity"
                 android:padding="5dp"
+<<<<<<< HEAD
                 android:text="Register your self here"
                 android:textAlignment="center"
                 android:textStyle="bold" />
+=======
+                android:text="Register yourself here"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+>>>>>>> e51ef12abfb741808c28a251e0ba38f1c002dc42
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
 </LinearLayout>
