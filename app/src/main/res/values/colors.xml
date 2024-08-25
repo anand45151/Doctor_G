@@ -8,8 +8,14 @@
     <color name="purple_500">#9C27B0</color>
     <color name="background">#F0F4F3</color>
     <color name="buttontext">#50C2C9</color>
+    //Action Bar Button Color
+    <color name="white2">#fff</color>
 
     //indicator color
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
+
+    //ToolBar Color
+    <color name="profile_tolbar_color">#739360</color>
+
 </resources>

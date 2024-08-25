@@ -17,13 +17,28 @@
         tools:targetApi="31">
         <activity
             android:name=".Activities.User_Profile"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".Activities.Doctor_List_Activity"
-            android:exported="false"></activity>
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".Activities.OnBoarding_Screen"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".Activities.Home_Page_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.User_Registration_Activity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,17 +46,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.Home_Page_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Activities.User_Registration_Activity"
-            android:exported="false" />
-        <activity
             android:name=".Activities.UserLogin_Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Activities.Home_Page_Activity">
+
+        </activity>
         <activity
             android:name=".Activities.MainActivity"
-            android:exported="false"></activity>
+            android:exported="false">
+
+        </activity>
     </application>
 
 </manifest>

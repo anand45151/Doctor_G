@@ -65,6 +65,9 @@ public class Home_Page_Activity extends AppCompatActivity {
                 } else if (id == R.id.nav_settings) {
 
                     loadfragment(new HomeFragment());
+                } else if (id == R.id.nav_profile) {
+                    Intent intent = new Intent(getApplicationContext(), User_Profile.class);
+                    startActivity(intent);
                 }
 
                 drawerLayout.closeDrawer(GravityCompat.START);

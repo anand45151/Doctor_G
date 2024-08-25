@@ -42,6 +42,7 @@ dependencies {
 
 
 
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
     implementation ("androidx.core:core:1.6.0")
     implementation("com.airbnb.android:lottie:6.0.0")

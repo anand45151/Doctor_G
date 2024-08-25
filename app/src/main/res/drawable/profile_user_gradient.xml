@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid color with curved corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#739360"/> <!-- Solid color -->
+            <corners
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"/> <!-- Curved bottom corners -->
+        </shape>
+    </item>
+</layer-list>
