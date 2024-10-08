@@ -92,7 +92,7 @@ public class OnBoarding_Screen extends AppCompatActivity {
 
     private void launchHomeScreen() {
         // Navigate to the main activity or home screen
-        Intent intent = new Intent(OnBoarding_Screen.this, UserLogin_Activity.class);
+        Intent intent = new Intent(OnBoarding_Screen.this, User_Login_Activity.class);
         startActivity(intent);
         finish(); // Optional: Prevent returning to onboarding
 

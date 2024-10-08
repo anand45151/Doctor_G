@@ -10,12 +10,16 @@
     <color name="buttontext">#50C2C9</color>
     //Action Bar Button Color
     <color name="white2">#fff</color>
-
+    <color name="darkgrey">#636363</color>
+    <color name="lightgray">#E7E7E7</color>
     //indicator color
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
 
     //ToolBar Color
     <color name="profile_tolbar_color">#739360</color>
+
+    <color name="my_primary">#5E35B1</color>
+    <color name="my_secondary">#673AB7</color>
 
 </resources>

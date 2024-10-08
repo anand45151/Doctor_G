@@ -1,40 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/doctor_photo"
-        android:layout_width="100dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+
         android:layout_height="100dp"
-        android:scaleType="centerCrop" />
+        android:layout_alignTop="@+id/card2"
+        android:layout_alignBottom="@+id/card2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:translationZ="5dp"
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/doctor_photo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/d5"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
 
 
-    <TextView
-        android:id="@+id/doctor_name"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="4dp"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@color/lightgray"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/doctor_specialty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/hblack"
+            android:maxWidth="200dp"
+            android:text="Doctor Name"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/doctor_experiences"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/doctor_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/hlight"
+            android:maxWidth="250dp"
+            android:text="Specilist"
+            android:textColor="#9A313035"
+            android:textSize="12dp" />
 
-    <TextView
-        android:id="@+id/doctor_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp" />
-</LinearLayout>
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:text="Specialist for:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/doctor_specialty"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="41dp"
+            android:fontFamily="@font/bungee"
+            android:text="doc"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="80dp"
+            android:text="Experiences " />
+
+        <TextView
+            android:id="@+id/doctor_experiences"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/hblack"
+            android:text="799"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="105dp"
+
+            android:background="@drawable/appoint_mybutton"
+            android:text="Fix Appointment"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_star_24" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#afd7d6"
     tools:context=".Activities.User_Registration_Activity">
 
     <ScrollView
@@ -16,84 +15,84 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/form_background"
             android:gravity="center_horizontal"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google"
+                    android:text="DoctorG"
+                    android:textSize="45sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingBottom="20dp"
-                android:text="User Registration"
-                android:textSize="24sp"
+                android:text="Register yourself"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Username" />
+                android:text="First Name" />
 
             <EditText
+                android:id="@+id/firstname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/edittext_background"
-                android:hint="Enter your username" />
+                android:hint="First Name" />
 
+            <!-- Last Name -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Email" />
+                android:text="Last Name" />
 
             <EditText
+                android:id="@+id/lastname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/edittext_background"
-                android:hint="Enter your email"
-                android:inputType="textEmailAddress" />
+                android:hint="Last Name" />
 
+            <!-- Gender -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Password" />
+                android:text="Gender" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edittext_background"
-                android:hint="Enter your password"
-                android:inputType="textPassword" />
-
-            <TextView
-                android:layout_width="match_parent"
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="Confirm Password" />
+                android:orientation="horizontal">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edittext_background"
-                android:hint="Confirm your password"
-                android:inputType="textPassword" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:text="Phone Number" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+            </RadioGroup>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edittext_background"
-                android:hint="Enter your phone number"
-                android:inputType="phone" />
-
+            <!-- Address -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,16 +100,93 @@
                 android:text="Address" />
 
             <EditText
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/edittext_background"
-                android:hint="Enter your address" />
+                android:hint="Enter your Address"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="City" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter your City"
+                android:inputType="text" />
+
+            <!-- State -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="State" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter your State"
+                android:inputType="text" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter your Phone Number"
+                android:inputType="phone" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Date of Birth" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Enter your Date of Birth"
+                android:inputType="date" />
+
 
             <Button
+                android:id="@+id/registration_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:id="@+id/registration_btn"
                 android:background="@drawable/button_background"
                 android:text="Register"
                 android:textColor="@android:color/white" />
@@ -119,9 +195,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Go to the Login Button "
+                android:text="Go to Login"
                 android:textAlignment="center"
                 android:textStyle="bold" />
+
         </LinearLayout>
+
+
     </ScrollView>
 </FrameLayout>

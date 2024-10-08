@@ -7,12 +7,12 @@
 
     //Description
     <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
-    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_two">Choose the best doctor from the DoctorG Appliction</string>
     <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
     <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
     //Navigation Drawer
-
-<string name="profile_Section">
+    <string name="app_moto">DoctorG brings healthcare to your fingertips, offering seamless online doctor appointments, convenient medicine ordering, and easy access to health tests, all in one app. Whether you need expert consultation, prescription medicines, or diagnostic tests, we’ve got you covered. Our platform connects you with top doctors, ensures timely delivery of medications, and provides accurate test results, all from the comfort of your home. With DoctorG, your health is our priority, giving you the convenience and care you deserve. Empower yourself to manage your health journey with ease, efficiency, and trust</string>
+    <string name="profile_Section">
     update your profile to find your doctor with better impression
 </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

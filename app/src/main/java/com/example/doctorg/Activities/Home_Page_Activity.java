@@ -71,11 +71,17 @@ public class Home_Page_Activity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Doctor_List_Activity.class);
                     startActivity(intent);
 
-                } else if (id == R.id.nav_settings) {
-
-                    loadfragment(new HomeFragment());
+                } else if (id == R.id.medical_records) {
+                    Intent intent = new Intent(getApplicationContext(), Medical_Record_Activity.class);
+                    startActivity(intent);
                 } else if (id == R.id.nav_profile) {
                     Intent intent = new Intent(getApplicationContext(), User_Profile.class);
+                    startActivity(intent);
+                } else if (id == R.id.appointment) {
+                    Intent intent = new Intent(getApplicationContext(), Appointment_Activity.class);
+                    startActivity(intent);
+                } else if (id == R.id.about_us) {
+                    Intent intent = new Intent(getApplicationContext(), About_us.class);
                     startActivity(intent);
                 }
 

@@ -2,31 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/my_doctor_listing"
-        android:icon="@drawable/home"
+        android:icon="@drawable/mydoctor"
         android:title="My Doctor" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/setting"
+        android:id="@+id/medical_records"
+        android:icon="@drawable/medicalrecords"
         android:title="Medical Records" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/setting"
+        android:id="@+id/payment_record"
+        android:icon="@drawable/payment"
         android:title="Payment" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/setting"
-        android:title="Medical Orders" />
+        android:id="@+id/appointment"
+        android:icon="@drawable/appointment"
+        android:title="Appointment" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/setting"
+        android:id="@+id/test_booking"
+        android:icon="@drawable/testbooking"
         android:title="Test Booking" />
     <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/setting"
-        android:title="Help Center"/>
+        android:id="@+id/help_center"
+        android:icon="@drawable/helpcenter"
+        android:title="Help Center" />
+
     <item
         android:id="@+id/nav_profile"
-        android:icon="@drawable/setting"
-        android:title="Profile"/>
-    <!-- Add more items as needed -->
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/customer"
+        android:title="About us" />
+
 </menu>
