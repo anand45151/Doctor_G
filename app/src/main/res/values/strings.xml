@@ -4,6 +4,7 @@
     <string name="heading_one">Find Trusted Doctors</string>
     <string name="heading_two">Choose Best Doctors</string>
     <string name="heading_three">Easy Appointments </string>
+    <string name="Appointment_Notice">⚠️ Please make sure you are available for the treatment at the given time</string>
 
     //Description
     <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>

@@ -5,45 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.User_Profile">
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/app_bar"
-            style="@style/DoctorG.Toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/profile_tolbar_color"
-            app:navigationIcon="@drawable/back_arrow"
-            app:title="Appointment"
-            app:titleTextColor="@color/white" />
-
-    </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/bungee"
-            android:text="Appointment"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:padding="15dp">
 
         <ImageView
+            android:id="@+id/doctor_photo_appointment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/doctoop" />
+
+        <TextView
+            android:id="@+id/doctor_name_appointment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/demoxe"
+            android:text="Docotr Name:" />
 
-            />
+        <TextView
+            android:id="@+id/doctor_specialty_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Docotr Speciltiy:" />
+
+        <TextView
+            android:id="@+id/doctor_location_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Docotr Location:" />
+
+        <TextView
+            android:id="@+id/doctor_experiences_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Docotr Experience:" />
+
+        <TextView
+            android:id="@+id/Notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/Appointment_Notice" />
     </LinearLayout>
-
 </RelativeLayout>
