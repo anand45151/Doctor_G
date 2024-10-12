@@ -35,8 +35,6 @@ public class User_Registration_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_registration);
-
-        // Initialize views
         registration_btn = findViewById(R.id.registration_btn);
         firstName = findViewById(R.id.firstname);
         lastName = findViewById(R.id.lastname);

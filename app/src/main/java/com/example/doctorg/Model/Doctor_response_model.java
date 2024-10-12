@@ -8,7 +8,6 @@ public class Doctor_response_model {
     private String Doctor_Location;
     private String Doctor_Photo;
 
-    // Getters and Setters
     public String getDoctor_id() {
         return Doctor_id;
     }

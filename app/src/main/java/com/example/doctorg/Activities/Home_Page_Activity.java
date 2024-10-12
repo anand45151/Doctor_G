@@ -1,6 +1,7 @@
 package com.example.doctorg.Activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Gravity;
@@ -37,6 +38,7 @@ public class Home_Page_Activity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar toolbar;
+    TextView userid;
 
     Button section_popular;
 
@@ -47,6 +49,7 @@ public class Home_Page_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        userid = findViewById(R.id.userid);
         progressBar = findViewById(R.id.progressBar);
 
         // Example usage
@@ -60,6 +63,11 @@ public class Home_Page_Activity extends AppCompatActivity {
                 this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 
         drawerLayout.addDrawerListener(toggle);
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences("UserSession", MODE_PRIVATE);
+        String email = sharedPreferences.getString("email", "Email not found");
+        userid.setText(email); // Set the retrieved user ID to the TextView
 
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -78,7 +86,7 @@ public class Home_Page_Activity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), User_Profile.class);
                     startActivity(intent);
                 } else if (id == R.id.appointment) {
-                    Intent intent = new Intent(getApplicationContext(), Appointment_Activity.class);
+                    Intent intent = new Intent(getApplicationContext(), Appointment_List_Activity.class);
                     startActivity(intent);
                 } else if (id == R.id.about_us) {
                     Intent intent = new Intent(getApplicationContext(), About_us.class);
