@@ -6,6 +6,8 @@
     <string name="heading_three">Easy Appointments </string>
     <string name="Appointment_Notice">⚠️ Please make sure you are available for the treatment at the given time</string>
 
+    <string name="PatientID_Descriptino">Enter the Same Patient ID for Book the Doctor </string>
+
     //Description
     <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
     <string name="desc_two">Choose the best doctor from the DoctorG Appliction</string>
