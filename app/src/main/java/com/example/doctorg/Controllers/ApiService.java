@@ -48,7 +48,9 @@ public interface ApiService {
     Call<LoginResponse> loginUser(@Field("email") String email, @Field("f_name") String firstName);
 
 
-    @GET("Fetch_User_Details_API.php") // Make sure to update the URL if needed
+    @GET("Fetch_User_Details_API.php")
     Call<UserResponse> fetchUserDetails(@Query("email") String email);
+
+
 
 }
