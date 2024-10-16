@@ -5,47 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.User_Profile">
+
     <ProgressBar
         android:id="@+id/progress_bar"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
-    <LinearLayout
-        android:id="@+id/linear_back_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:background="@color/white"
-        android:elevation="6dp">
-        <include layout="@layout/back_button" />
 
-        <TextView
-            android:id="@+id/tv_title_edit_profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Appointment Section"
-            android:fontFamily="@font/aquire"
-            android:textSize="25sp"
-            android:textColor="#001833"
-            android:textAlignment="center"
-            android:layout_marginTop="24dp"
-            android:layout_marginStart="-20dp"/>
-
-    </LinearLayout>
-
+    <!-- ScrollView to make content scrollable -->
     <ScrollView
+        android:id="@+id/content_scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/content_scroll_view">
+        android:layout_height="match_parent">
 
+        <!-- Content inside ScrollView -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
+
+            <!-- Back Arrow and Title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="#CEBEE4"
+                    android:src="@drawable/back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Appointment"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +59,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="20dp">
+                    android:padding="16dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/doctor_photo_appointment"
@@ -112,10 +115,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/doctor_experiences_appointment"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="5dp"
                         android:layout_toEndOf="@id/doctor_photo_appointment"
                         android:numStars="5"
-                        android:rating="3" />
+                        android:rating="3"
+                        android:scaleX="0.7"
+                        android:scaleY="0.7" />
 
                     <TextView
                         android:id="@+id/Notice"
@@ -140,80 +145,62 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Appointment For"
-                    android:fontFamily="@font/aquire"
                     android:textSize="18sp"
-                    android:layout_marginBottom="10dp"
                     android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/PatientID_Descriptino"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/aquire"/>
 
                 <TextView
                     android:id="@+id/user_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="User email"
-                    android:layout_marginBottom="10dp"
-                    />
+                    android:text="User email" />
+
                 <EditText
                     android:id="@+id/patient_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_edit_text"
-                    android:padding="13dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/gray"
                     android:hint="Patient ID"
-                    />
+                    android:padding="8dp" />
 
                 <EditText
                     android:id="@+id/doctor_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:hint="Doctor ID"
                     android:background="@drawable/rounded_edit_text"
-                    android:padding="13dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/gray" />
+                    android:hint="Doctor ID"
+
+                    android:padding="8dp" />
 
                 <EditText
                     android:id="@+id/disease_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:hint="Disease Description"
                     android:background="@drawable/rounded_edit_text"
-                    android:padding="13dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/gray" />
+                    android:hint="Disease Description"
+                    android:padding="8dp" />
 
                 <EditText
                     android:id="@+id/appointment_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:hint="Select the Date"
-                    android:focusable="false"
-                    android:clickable="true"
                     android:background="@drawable/rounded_edit_text"
-                    android:padding="13dp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/gray"/>
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Select the Date"
+                    android:padding="8dp" />
+
                 <Button
                     android:id="@+id/fix_appointment_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:backgroundTint="#324A59"
-                    android:textColor="@color/white"
                     android:text="Fix the Appointment" />
             </LinearLayout>
+
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -267,8 +254,8 @@
                         app:cardElevation="10dp">
 
                         <ImageView
-                            android:layout_width="match_parent"
                             android:id="@+id/homesandwich"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
                             android:src="@drawable/doctoop">
@@ -284,9 +271,9 @@
                         app:cardElevation="10dp">
 
                         <ImageView
+                            android:id="@+id/homeice"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/homeice"
                             android:scaleType="centerCrop"
                             android:src="@drawable/kloks">
 
@@ -301,9 +288,9 @@
                         app:cardElevation="10dp">
 
                         <ImageView
+                            android:id="@+id/homecoffee"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:id="@+id/homecoffee"
                             android:scaleType="centerCrop"
                             android:src="@drawable/doctoop">
 
@@ -312,6 +299,10 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
+
+
         </LinearLayout>
+
     </ScrollView>
+
 </RelativeLayout>
